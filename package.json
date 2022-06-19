@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "node index.js",
+    "start:prod": "nodemon -r dotenv/config index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/12FourOnSix/CRUD-API/issues"
   },
-  "homepage": "https://github.com/12FourOnSix/CRUD-API#readme"
+  "homepage": "https://github.com/12FourOnSix/CRUD-API#readme",
+  "devDependencies": {
+    "dotenv": "^16.0.1"
+  }
 }
